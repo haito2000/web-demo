@@ -1,0 +1,56 @@
+:root {
+    --white-color: rgb(161, 157, 157);
+    --primary-color: #222222;
+    --text-color: #808080;
+    --black-color: #333333;
+    --base-color: #181a1b;
+    --red-color: rgb(175, 52, 52);
+    --yellow-color: #fed100;
+    
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    max-width: 20ch;
+    margin: 20px 0 ;
+    cursor: no-drop;
+}
+ul {
+    list-style: none;
+}
+p {
+    max-width: 60ch;
+}
+a {
+    color: currentColor;
+}
+#app {
+    background-color: var(--primary-color);
+}
+.fake::before {
+    content: "";
+    border: 10px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 50%;
+    top: -21px;
+}
+@keyframes header {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
